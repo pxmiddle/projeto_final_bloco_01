@@ -28,8 +28,8 @@ public class Bebida extends Produto {
 	public void visualizar() {
 		super.visualizar();
 		if (checarIdade(alcool) == false) {
-			System.out.println("Idade: " + this.alcool + " anos \nBebida Proibido para menores");
+			System.out.println("Idade: " + this.alcool + " anos \nBebidas alcoólicas são Proibido para menores");
 		} else
-			System.out.println("Idade: " + this.alcool + " anos \nBebida liberadas");
+			System.out.println("Idade: " + this.alcool + " anos \nBebida alcoólica liberada");
 	}
 }

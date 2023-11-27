@@ -6,6 +6,7 @@ public class Lanche extends Produto {
 
 	public Lanche(int idProduto, String nomeProduto, int tipoProduto, float valor, int sabor) {
 		super(idProduto, nomeProduto, tipoProduto, valor);
+		this.sabor = sabor;
 	}
 
 	public int getSabor() {
@@ -27,9 +28,9 @@ public class Lanche extends Produto {
 	public void visualizar() {
 		super.visualizar();
 		if (checarSabor(sabor) == false) {
-			System.out.println("Doce");
+			System.out.println("Sabor: Doce");
 		} else
-			System.out.println("Salgado");
+			System.out.println("Sabor: Salgado");
 	}
 
 }
