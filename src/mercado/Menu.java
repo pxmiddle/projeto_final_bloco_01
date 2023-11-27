@@ -3,6 +3,10 @@ package mercado;
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import mercado.model.Produto;
+import mercado.model.Lanche;
+import mercado.model.Bebida;
+
 
 public class Menu {
 
@@ -12,6 +16,13 @@ public class Menu {
 		
 		int opcao = 1;
 	
+		Produto l1 = new Lanche(1, "Coxinha", 2, 3.0f, 1);
+		l1.visualizar();
+		Produto b1 = new Bebida(1, "Coca-Cola", 1, 10.0f, 10);
+		b1.visualizar();
+		Produto b2 = new Bebida(1, "Vodka", 1, 10.0f, 19);
+		b2.visualizar();
+		
 		while (true) {
 
 			System.out.println();
